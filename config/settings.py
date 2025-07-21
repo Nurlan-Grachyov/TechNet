@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "contacts",
     "products",
     "users",
+    "transactions",
 
     "rest_framework",
     "django_filters",

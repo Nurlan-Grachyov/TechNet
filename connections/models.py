@@ -27,8 +27,3 @@ class NetworkNode(models.Model):
         else:
             self.level = self.supplier.level + 1
         super().save(*args, **kwargs)
-
-    def update_debt(self):
-        """Метод для обновления суммы задолженности"""
-        self.debt_to_supplier += self.products.price
-        self.save(update_fields=['debt_to_supplier'])
